@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/jpg" href="imagens/icone.jpg"/>
+    <link rel="stylesheet" href="estilos.css"></link>
+    <title>Cadastro</title>
+</head>
+<body>
+    <center><img src="imagens/icone.jpg" height="200px" alt="Logo"/></center>
+
+<div class="fundo_1">
+     <div class="h1_a"><h1>Área do Cadastro</h1></div>
+     <div class="p_a">
+        <p>Faça seu Cadastro conosco para receber notícias e informações sobre o futebol, seu time e outras curiosidades em geral.</p></div>
+        
+        <form id="form" action="https://webhook.site/7f6b6234-4386-4ae6-b210-9b77c253a239" target="_blank">
+            <center><fieldset><legend>Dados do Cadastro</legend>
+                <div><label>Nome:</label>
+                <input id="input_nome" type="text" name="nome" placeholder="Digite seu Nome"></div>
+                <div><label>Email:</label>
+                <input id="input_email" type="email" name="email" placeholder="Digite seu Email"></div>
+                <div><label>Time do Coração:</label>
+                <input id="input_time" type="text" name="time" placeholder="Digite seu Time"></div>
+                <div><label>Série</label>
+                <input id="input_serie" type="radio" name="serie" value="serA">Série A</br>
+                <input id="input_serie" type="radio" name="serie" value="serB">Série B</div>
+                <div><label>Deseja receber Informações/Notícias do seu time via Email?</label>
+                <input id="input_ss_nn" type="radio" name="ss_nn" value="yes">Sim
+                <input id="input_ss_nn" type="radio" name="ss_nn" value="no">Não</div>
+
+                <button type="submit" formmethod="get">Enviar</button>
+        </form></fielset></center></div>
+     </div>
+ </div>
+ </body>
+</html>
