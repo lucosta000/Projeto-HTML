@@ -13,8 +13,6 @@ Serie B - Noticias sobre os times da serie B, classificação, artilharia, trans
 
 Copa do Brasil - Noticias sobre os times presentes na copa do brasil, confrontos, artilharia, transferências e como funciona.
 
-Maiores campeões nacionais - História dos maiores campeões nacionais e suas histórias.
-
 Paleta de cores - Verde e branco.
 
 Logo - Bandeira do Brasil com uma bola de Futebol.
