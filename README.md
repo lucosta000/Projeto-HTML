@@ -6,6 +6,8 @@ Curiosidades como: quais foram os primeiros times brasileiros a serem criados, o
 
 Falaremos sobre como essa paixão nacional surgiu em nosso país, atravessou gerações e os motivos de chamarem o Brasil de "País do futebol".
 
+Além disso, nosso site terá uma central de notificações, na qual o usuário poderá receber informações sobre seu time do coração.
+
 Integrantes do grupo:
 Lucas Gabriel Bergara Antunes
 João Pedro Matiello de Oliveira
