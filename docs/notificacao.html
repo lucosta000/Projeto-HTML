@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icone.jpg" type="image/jpg">
+    <title>Central de Notificações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- script para mostrar/ocultar o menu lateral do mobile-->
+    <script>
+        function mostrar() {
+            const menu_late = document.querySelector('.menu_late')
+            menu_late.style.display = 'flex'
+        }
+
+        function fechar() {
+            const menu_late = document.querySelector('.menu_late')
+            menu_late.style.display = 'none'
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Menu lateral para mobile-->
+    <nav class="menu_late">
+        <ul class="mobile">
+            <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+            <li><a class="nav_li" href="index.html">Início</a></li>
+            <li><a class="nav_li" href="serA.html">Série A</a></li>
+            <li><a class="nav_li" href="serB.html">Série B</a></li>
+            <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
+            <li><a class="nav_li" href="notificacao.html">Central de Notificações</a></li>
+
+        </ul>
+    </nav>
+
+<!-- Menu normal para desktop-->
+    <nav class="nav desktop">
+        <a href="index.html">Início</a>
+        <a href="serA.html">Série A</a>
+        <a href="serB.html">Série B</a>
+        <a href="copa.html">Copa do Brasil</a>
+        <a href="notificacao.html">Central de Notificações</a>
+
+    </nav>
+
+<!-- trequinho para abrir o menu lateral mobile -->
+    <div class="botao_menu  ">
+        <p class="mobile" onclick=mostrar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+            viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>MENU</p>
+    </div>
+    <div class="banner">
+        <p>Central de Notificações</p>
+    </div>
+
+    <section id="notificacoes" class="section">
+        <div class="form-container">
+            <h2>Insira seus dados para receber atualizações</h2>
+            <form id="form" action="https://webhook.site/02d35fd0-eddc-4436-a179-3b7795639cfe" target="_blank"
+                method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="*Campo obrigatorio">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="*Campo obrigatorio">
+
+                <label for="time">Selecione o seu time</label>
+                <select id="time" name="time" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <optgroup label="Série A">
+                        <option value="america-mg">América-MG</option>
+                        <option value="athletico-pr">Athletico-PR</option>
+                        <option value="atletico-mg">Atlético-MG</option>
+                        <option value="bahia">Bahia</option>
+                        <option value="botafogo">Botafogo</option>
+                        <option value="corinthians">Corinthians</option>
+                        <option value="cruzeiro">Cruzeiro</option>
+                        <option value="cuiaba">Cuiabá</option>
+                        <option value="flamengo">Flamengo</option>
+                        <option value="fluminense">Fluminense</option>
+                        <option value="fortaleza">Fortaleza</option>
+                        <option value="goias">Goiás</option>
+                        <option value="gremio">Grêmio</option>
+                        <option value="internacional">Internacional</option>
+                        <option value="palmeiras">Palmeiras</option>
+                        <option value="santos">Santos</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="vasco">Vasco</option>
+                    </optgroup>
+                    <optgroup label="Série B">
+                        <option value="abc">ABC</option>
+                        <option value="avai">Avaí</option>
+                        <option value="botafogo-sp">Botafogo-SP</option>
+                        <option value="ceara">Ceará</option>
+                        <option value="chapecoense">Chapecoense</option>
+                        <option value="crb">CRB</option>
+                        <option value="criciuma">Criciúma</option>
+                        <option value="guarani">Guarani</option>
+                        <option value="ituano">Ituano</option>
+                        <option value="juventude">Juventude</option>
+                        <option value="londrina">Londrina</option>
+                        <option value="mirassol">Mirassol</option>
+                        <option value="novorizontino">Novorizontino</option>
+                        <option value="ponte-preta">Ponte Preta</option>
+                        <option value="sampaio-correa">Sampaio Corrêa</option>
+                        <option value="sport">Sport</option>
+                        <option value="tombense">Tombense</option>
+                        <option value="vila-nova">Vila Nova</option>
+                        <option value="vitoria">Vitória</option>
+                    </optgroup>
+                </select>
+
+                <label for="informacoes">Deseja receber informações/notícias sobre seu time?</label>
+                <select id="informacoes" name="informacoes" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <!--<input type="radio" name="noti" id="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="noti" id="nao"> 
+                <label for="nao">Não</label> -->
+
+                <button type="submit" formmethod="get">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

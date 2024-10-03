@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icone.jpg" type="image/jpg">
+    <title>Copa do Brasil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- script para mostrar/ocultar o menu lateral do mobile-->
+    <script>
+        function mostrar() {
+            const menu_late = document.querySelector('.menu_late')
+            menu_late.style.display = 'flex'
+        }
+
+        function fechar() {
+            const menu_late = document.querySelector('.menu_late')
+            menu_late.style.display = 'none'
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Menu lateral para mobile-->
+    <nav class="menu_late">
+        <ul class="mobile">
+            <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+            <li><a class="nav_li" href="index.html">Início</a></li>
+            <li><a class="nav_li" href="serA.html">Série A</a></li>
+            <li><a class="nav_li" href="serB.html">Série B</a></li>
+            <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
+            <li><a class="nav_li" href="notificacao.html">Central de Notificações</a></li>
+
+        </ul>
+    </nav>
+
+<!-- Menu normal para desktop-->
+    <nav class="nav desktop">
+        <a href="index.html">Início</a>
+        <a href="serA.html">Série A</a>
+        <a href="serB.html">Série B</a>
+        <a href="copa.html">Copa do Brasil</a>
+        <a href="notificacao.html">Central de Notificações</a>
+
+    </nav>
+
+<!-- trequinho para abrir o menu lateral mobile -->
+    <div class="botao_menu  ">
+        <p class="mobile" onclick=mostrar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+            viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>MENU</p>
+    </div>
+    <div class="banner">
+        Copa do Brasil
+    </div>
+
+    <main class="main-content">
+        <div class="card">
+            <div class="card-content">
+                <h2>Sobre a Copa do Brasil</h2>
+                <p>A Copa do Brasil é uma das competições mais emocionantes do futebol brasileiro, disputada em formato de mata-mata, com participação de clubes de todas as divisões do país. O torneio permite que equipes de menor expressão enfrentem os grandes clubes em duelos eliminatórios, criando muitas surpresas e reviravoltas. Além do prestígio, o campeão garante uma vaga na Copa Libertadores, o que torna a competição ainda mais disputada. O formato democrático faz da Copa do Brasil um dos torneios mais imprevisíveis do futebol nacional.</p>
+            </div>
+            <div class="card-image">
+                <!-- Placeholder para a imagem do card -->
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <a href="#">Classificação Atual</a>
+            <a href="#">Últimos Jogos</a>
+            <a href="#">Times Participantes</a>
+        </div>
+    </main>
+
+</body>
+</html>
