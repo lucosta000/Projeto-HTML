@@ -17,4 +17,5 @@ Paleta de cores - Verde e branco.
 
 Logo - Bandeira do Brasil com uma bola de Futebol.
 
-![SitePrint](https://github.com/user-attachments/assets/c81345ef-830c-45c5-80e3-76b63fb86dd6)
+![SitePrint](![Capturar](https://github.com/user-attachments/assets/2ff5d2c3-2dc6-41ad-9c0c-73db22678c40)
+)
