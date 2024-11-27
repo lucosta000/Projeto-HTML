@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro</h2><hr>
+        <form method="post" action="">
+            <label>Nome <input type="text" name="nome" required></label><br>
+            <label>Email <input type="email" name="email" required></label><br>
+            <label>Senha <input type="password" name="senha" required></label><br>
+            <label>Telefone <input type="text" name="telefone" required></label><br>
+            <label>Clube</label>
+            <select name="clube" id="">
+                <option value="Corinthians">Corinsthians</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Santos">Santos</option>
+                <option value="São Paulo">São Paulo</option>
+            </select>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+            const telefone = document.getElementById('telefone').value;
+
+            // Faz a requisição para o servidor PHP externo
+            fetch('https://localhost/HTML/cadastro.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}&telefone=${encodeURIComponent(telefone)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('resultado').innerText = data.message;
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                document.getElementById('resultado').innerText = 'Erro ao enviar os dados.';
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

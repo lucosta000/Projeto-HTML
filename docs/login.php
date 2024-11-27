@@ -21,30 +21,3 @@ if(isset($_POST['sub'])){
   
 }
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <div class="form-container">
-        <h2>Login</h2><hr>
-        <form action="" method="POST">
-            <div class="div">
-                <label for="email">Email</label>
-                <input type="email" placeholder="Email" name="user">
-            </div>
-            <div class="div">   
-                <label for="senha">Senha</label>
-                <input type="password" placeholder="Senha" name="pass">
-            </div>
-            <div class="div">
-                <button type="submite" name="sub">Entrar</button>
-            </div>
-        </form>
-    </div>
-</body>
-</html>
