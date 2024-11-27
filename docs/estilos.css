@@ -395,7 +395,7 @@ nav li:fist-child{
         width: 100%;
     }
 
-/*CSS para o mobile fist*/
+
 @media only screen and (min-width: 768px) { 
 
     body {
