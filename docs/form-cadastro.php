@@ -62,7 +62,7 @@
             const senha = document.getElementById('senha').value;
             const telefone = document.getElementById('telefone').value;
 
-            // Faz a requisição para o servidor PHP externo
+            
             fetch('https://localhost/HTML/cadastro.php', {
                 method: 'POST',
                 headers: {
