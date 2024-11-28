@@ -63,7 +63,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 25px;
-    background-image: url(imagens/background\ geral.jpg);
+    background-image: url(imagens/backgroundGeral.jpg);
 
     
 }
@@ -72,7 +72,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px 25px;
-    background-image: url(imagens/background\ geral.jpg);
+    background-image: url(imagens/backgroundGeral.jpg);
 }
 .cardIndex {
     background-color: white;
