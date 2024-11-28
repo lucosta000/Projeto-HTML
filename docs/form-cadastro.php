@@ -1,3 +1,28 @@
+<?php
+    $clubes = [
+        "Atlético Mineiro",
+        "Atlético Paranaense",
+        "Bahia",
+        "Botafogo",
+        "Corinthians",
+        "Coritiba",
+        "Cruzeiro",
+        "Cuiabá",
+        "Flamengo",
+        "Fluminense",
+        "Fortaleza",
+        "Goiás",
+        "Grêmio",
+        "Internacional",
+        "Palmeiras",
+        "Red Bull Bragantino",
+        "Santos",
+        "São Paulo",
+        "Vasco da Gama"
+    ];
+    
+    sort($clubes);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,17 +33,19 @@
 <body>
     <div class="form-container">
         <h2>Cadastro</h2><hr>
-        <form method="post" action="">
+        <form method="post" action="cadastro.php">
             <label>Nome <input type="text" name="nome" required></label><br>
             <label>Email <input type="email" name="email" required></label><br>
             <label>Senha <input type="password" name="senha" required></label><br>
             <label>Telefone <input type="text" name="telefone" required></label><br>
             <label>Clube</label>
-            <select name="clube" id="">
-                <option value="Corinthians">Corinthians</option>
-                <option value="Palmeiras">Palmeiras</option>
-                <option value="Santos">Santos</option>
-                <option value="São Paulo">São Paulo</option>
+            <select name="clube" id="time" required>
+                <option value="">Selecione</option>
+                    <?php foreach ($clubes as $clube): ?>
+                <option value="<?php echo htmlspecialchars($clube); ?>">
+                    <?php echo htmlspecialchars($clube); ?>
+                </option>
+                    <?php endforeach; ?>
             </select>
             <button type="submit">Cadastrar</button>
         </form>
