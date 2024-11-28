@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $nome = $_POST['nome'];
     $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
     $senha = $_POST['senha']; 
     $clube = $_POST['clube'];
 
@@ -19,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param('sssss', $nome, $email, $senha, $telefone, $clube);
 
     if ($stmt->execute()) {
-        header("Location:login.php");
+        header("Location:login.html");
     } else {
         echo "Erro: " . $stmt->error;
     }
