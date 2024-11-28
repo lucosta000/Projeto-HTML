@@ -62,6 +62,46 @@ if (isset($_POST['sub'])) {
             header('Location: sao_paulo.html');
         } elseif ($clube === 'Vasco da Gama') {
             header('Location: vasco_da_gama.html');
+
+
+        }if ($clube === 'ABC') {
+            header('Location: abc.html');
+        } elseif ($clube === 'CRB') {
+            header('Location: crb.html');
+        } elseif ($clube === 'Cuiabá') {
+            header('Location: cuiaba.html');
+        } elseif ($clube === 'Chapecoense') {
+            header('Location: chapecoense.html');
+        } elseif ($clube === 'Guarani') {
+            header('Location: guarani.html');
+        } elseif ($clube === 'Vila Nova') {
+            header('Location: vila_nova.html');
+        } elseif ($clube === 'Sampaio Corrêa') {
+            header('Location: sampaio_correa.html');
+        } elseif ($clube === 'Londrina') {
+            header('Location: londrina.html');
+        } elseif ($clube === 'Ituano') {
+            header('Location: ituano.html');
+        } elseif ($clube === 'Vasco da Gama') {
+            header('Location: vasco.html');
+        } elseif ($clube === 'Ponte Preta') {
+            header('Location: ponte_preta.html');
+        } elseif ($clube === 'Mirassol') {
+            header('Location: mirassol.html');
+        } elseif ($clube === 'Operário Ferroviário') {
+            header('Location: operario_ferroviario.html');
+        } elseif ($clube === 'CRAC') {
+            header('Location: crac.html');
+        } elseif ($clube === 'Brasil de Pelotas') {
+            header('Location: brasil_pelotas.html');
+        } elseif ($clube === 'Remo') {
+            header('Location: remo.html');
+        } elseif ($clube === 'Novo Hamburgo') {
+            header('Location: novo_hamburgo.html');
+        } elseif ($clube === 'Botafogo-SP') {
+            header('Location: botafogo_sp.html');
+        } elseif ($clube === 'Piaui') {
+            header('Location: piaui.html');
         } else {
             header('Location: outro.html');
         }
