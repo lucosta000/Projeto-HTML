@@ -25,84 +25,43 @@ if (isset($_POST['sub'])) {
 
        
         if ($clube === 'Atlético Mineiro') {
-            header('Location: atletico_mineiro.html');
-        } elseif ($clube === 'Atlético Paranaense') {
-            header('Location: atletico_paranaense.html');
-        } elseif ($clube === 'Bahia') {
-            header('Location: bahia.html');
+            header('Location: atleticomg.html');
         } elseif ($clube === 'Botafogo') {
             header('Location: botafogo.html');
         } elseif ($clube === 'Corinthians') {
             header('Location: corinthians.html');
-        } elseif ($clube === 'Coritiba') {
-            header('Location: coritiba.html');
-        } elseif ($clube === 'Cruzeiro') {
+        }  elseif ($clube === 'Cruzeiro') {
             header('Location: cruzeiro.html');
-        } elseif ($clube === 'Cuiabá') {
-            header('Location: cuiaba.html');
-        } elseif ($clube === 'Flamengo') {
+        }  elseif ($clube === 'Flamengo') {
             header('Location: flamengo.html');
-        } elseif ($clube === 'Fluminense') {
-            header('Location: fluminense.html');
-        } elseif ($clube === 'Fortaleza') {
+        }  elseif ($clube === 'Fortaleza') {
             header('Location: fortaleza.html');
         } elseif ($clube === 'Goiás') {
             header('Location: goias.html');
-        } elseif ($clube === 'Grêmio') {
-            header('Location: gremio.html');
-        } elseif ($clube === 'Internacional') {
-            header('Location: internacional.html');
-        } elseif ($clube === 'Palmeiras') {
+        }   elseif ($clube === 'Palmeiras') {
             header('Location: palmeiras.html');
-        } elseif ($clube === 'Red Bull Bragantino') {
-            header('Location: red_bull_bragantino.html');
-        } elseif ($clube === 'Santos') {
+        }  elseif ($clube === 'Santos') {
             header('Location: santos.html');
         } elseif ($clube === 'São Paulo') {
             header('Location: sao_paulo.html');
         } elseif ($clube === 'Vasco da Gama') {
-            header('Location: vasco_da_gama.html');
+            header('Location: vasco.html');
 
 
-        }if ($clube === 'ABC') {
-            header('Location: abc.html');
-        } elseif ($clube === 'CRB') {
-            header('Location: crb.html');
-        } elseif ($clube === 'Cuiabá') {
-            header('Location: cuiaba.html');
-        } elseif ($clube === 'Chapecoense') {
-            header('Location: chapecoense.html');
         } elseif ($clube === 'Guarani') {
             header('Location: guarani.html');
-        } elseif ($clube === 'Vila Nova') {
-            header('Location: vila_nova.html');
-        } elseif ($clube === 'Sampaio Corrêa') {
-            header('Location: sampaio_correa.html');
-        } elseif ($clube === 'Londrina') {
-            header('Location: londrina.html');
-        } elseif ($clube === 'Ituano') {
-            header('Location: ituano.html');
-        } elseif ($clube === 'Vasco da Gama') {
-            header('Location: vasco.html');
-        } elseif ($clube === 'Ponte Preta') {
+        }  elseif ($clube === 'Ponte Preta') {
             header('Location: ponte_preta.html');
         } elseif ($clube === 'Mirassol') {
             header('Location: mirassol.html');
-        } elseif ($clube === 'Operário Ferroviário') {
-            header('Location: operario_ferroviario.html');
-        } elseif ($clube === 'CRAC') {
-            header('Location: crac.html');
-        } elseif ($clube === 'Brasil de Pelotas') {
-            header('Location: brasil_pelotas.html');
-        } elseif ($clube === 'Remo') {
-            header('Location: remo.html');
-        } elseif ($clube === 'Novo Hamburgo') {
-            header('Location: novo_hamburgo.html');
-        } elseif ($clube === 'Botafogo-SP') {
-            header('Location: botafogo_sp.html');
-        } elseif ($clube === 'Piaui') {
-            header('Location: piaui.html');
-        } else {
+        } elseif ($clube === 'Novorizontino') {
+            header('Location: novorizontino.html');
+        } elseif ($clube === 'Sport') {
+            header('Location: sport.html');
+        } elseif ($clube === 'Ceará') {
+            header('Location: ceara.html');
+        }
+         else {
             header('Location: outro.html');
         }
         exit; 
