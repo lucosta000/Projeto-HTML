@@ -1,5 +1,5 @@
 <?php
-session_start(); // Iniciar sessão para usar $_SESSION
+session_start(); 
 
 $conn = new mysqli('localhost', 'root', '', 'cadastro');
 $mensagem = "Email ou senha incorretos!";
@@ -12,18 +12,18 @@ if (isset($_POST['sub'])) {
     $u = $_POST['user'];
     $p = $_POST['pass'];
 
-    // Consulta para verificar email e senha
+    
     $s = "SELECT * FROM usuarios WHERE email='$u' AND senha='$p'";
     $qu = mysqli_query($conn, $s);
 
     if (mysqli_num_rows($qu) > 0) {
         $f = mysqli_fetch_assoc($qu);
 
-        // Capturar o clube do usuário
+        
         $clube = $f['clube'];
         $_SESSION['id'] = $f['id'];
 
-        // Redirecionar com base no clube
+       
         if ($clube === 'Atlético Mineiro') {
             header('Location: atletico_mineiro.html');
         } elseif ($clube === 'Atlético Paranaense') {
@@ -65,7 +65,7 @@ if (isset($_POST['sub'])) {
         } else {
             header('Location: outro.html');
         }
-        exit; // Finalizar o script após o redirecionamento
+        exit; 
     } else {
         echo "<script>alert('$mensagem');</script>";
         
