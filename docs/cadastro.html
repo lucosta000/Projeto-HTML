@@ -2,12 +2,12 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
+
     <!-- script para mostrar/ocultar o menu lateral do mobile-->
     <script>
         function mostrar() {
@@ -45,6 +45,8 @@
         <a href="serA.html">Série A</a>
         <a href="serB.html">Série B</a>
         <a href="copa.html">Copa do Brasil</a>
+
+
     </nav>
 
 <!-- trequinho para abrir o menu lateral mobile -->
@@ -53,52 +55,53 @@
             viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>MENU</p>
     </div>
+    
     <div class="form-container">
-        <h2>Login</h2><hr>
-        <form action="" method="POST">
-            <div class="div">
-                <label for="email">Email</label>
-                <input type="email" placeholder="Email" name="user">
-            </div>
-            <div class="div">   
-                <label for="senha">Senha</label>
-                <input type="password" placeholder="Senha" name="pass">
-            </div>
-            <div class="div">
-                <button type="submite" name="sub">Entrar</button>
-            </div>
+        <h2>Cadastro</h2><hr>
+        <form method="post" action="">
+            <label>Nome <input type="text" name="nome" required></label><br>
+            <label>Email <input type="email" name="email" required></label><br>
+            <label>Senha <input type="password" name="senha" required></label><br>
+            <label>Telefone <input type="text" name="telefone" required></label><br>
+            <label>Clube</label>
+            <select name="clube" id="">
+                <option value="Corinthians">Corinthians</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Santos">Santos</option>
+                <option value="São Paulo">São Paulo</option>
+            </select>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 
     <script>
-        document.getElementById('formLogin').addEventListener('submit', function(e) {
+        document.getElementById('formCadastro').addEventListener('submit', function(e) {
             e.preventDefault();
 
+            const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
             const senha = document.getElementById('senha').value;
+            const telefone = document.getElementById('telefone').value;
 
             // Faz a requisição para o servidor PHP externo
-            fetch('https://meusite.com/login.php', {
+            fetch('https://localhost/HTML/cadastro.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: `email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`
+                body: `nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}&telefone=${encodeURIComponent(telefone)}`
             })
             .then(response => response.json())
             .then(data => {
-                // Exibe o resultado no front-end
-                if (data.success) {
-                    document.getElementById('resultado').innerHTML = `<p style="color: green;">${data.message}</p>`;
-                } else {
-                    document.getElementById('resultado').innerHTML = `<p style="color: red;">${data.message}</p>`;
-                }
+                document.getElementById('resultado').innerText = data.message;
             })
             .catch(error => {
                 console.error('Erro:', error);
-                document.getElementById('resultado').innerHTML = `<p style="color: red;">Erro ao processar o login.</p>`;
+                document.getElementById('resultado').innerText = 'Erro ao enviar os dados.';
             });
         });
     </script>
+</body>
+</html>
 </body>
 </html>
