@@ -42,7 +42,7 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Exibe o resultado no front-end
+                
                 if (data.success) {
                     document.getElementById('resultado').innerHTML = `<p style="color: green;">${data.message}</p>`;
                 } else {
