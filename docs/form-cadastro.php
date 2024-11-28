@@ -1,21 +1,13 @@
 <?php
     $clubes = [
         "Atlético Mineiro",
-        "Atlético Paranaense",
-        "Bahia",
         "Botafogo",
         "Corinthians",
-        "Coritiba",
         "Cruzeiro",
-        "Cuiabá",
         "Flamengo",
-        "Fluminense",
         "Fortaleza",
         "Goiás",
-        "Grêmio",
-        "Internacional",
         "Palmeiras",
-        "Red Bull Bragantino",
         "Santos",
         "São Paulo",
         "Vasco da Gama"
