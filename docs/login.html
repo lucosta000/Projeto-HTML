@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +10,7 @@
 <body>
     <div class="form-container">
         <h2>Login</h2><hr>
-        <form action="" method="POST">
+        <form action="login.php" method="POST">
             <div class="div">
                 <label for="email">Email</label>
                 <input type="email" placeholder="Email" name="user">
@@ -31,7 +32,7 @@
             const email = document.getElementById('email').value;
             const senha = document.getElementById('senha').value;
 
-            // Faz a requisição para o servidor PHP externo
+          
             fetch('https://meusite.com/login.php', {
                 method: 'POST',
                 headers: {
