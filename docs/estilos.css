@@ -1,5 +1,4 @@
 @charset "UTF-8";
-$fundo: "imagens/background\ geral.jpg";
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -8,6 +7,33 @@ body {
     background-color: #e1f5d1;
 }
 
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  caption {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+
+  th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
 
 .btn {
     padding: 5px 10px;
@@ -63,16 +89,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 25px;
-    background-image: url(imagens/backgroundGeral.jpg);
-
-    
 }
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 25px;
-    background-image: url(imagens/backgroundGeral.jpg);
 }
 .cardIndex {
     background-color: white;
@@ -284,17 +306,10 @@ margin-bottom: 10px;
 .desktop{
     display: none;
 }
-.imagem{
-    display: none;
-}
 
 .mobile{
     display: contents;
     align-items: top;
-}
-.h1{
-    color: white;
-    font-size: 50px;
 }
 .botao_menu{
 
@@ -314,7 +329,10 @@ nav {
    
    background-color: white;
    box-shadow: 3px 3px 5px rgba(0, 0, 0,0.1);
-   align-content: top;
+   
+   
+   
+   
    
    /* background-color: #4a6a41;
     color: white;
@@ -336,6 +354,13 @@ nav a {
     display: flex;
     align-items: center;
     font-size: 20px;
+
+
+
+
+
+
+
 
     /*color: white;
     text-decoration: none;
@@ -373,7 +398,7 @@ nav li:fist-child{
     position: fixed;
     top: 0;
     right: 10;
-    height: 580px;
+    height: 520px;
     width: 250px ;
     background-color: #4a8c4abd;
     backdrop-filter: blur(10px);
@@ -395,7 +420,7 @@ nav li:fist-child{
         width: 100%;
     }
 
-
+/*CSS para o mobile fist*/
 @media only screen and (min-width: 768px) { 
 
     body {
@@ -405,13 +430,35 @@ nav li:fist-child{
         background-color: #e1f5d1;
     }
     
-    h1{
-        color: white;
-        font-size: 50px;
-        
-
+    
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(140 140 140);
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+      
+      caption {
+        caption-side: bottom;
+        padding: 10px;
+        font-weight: bold;
+      }
+      
+      thead,
+      tfoot {
+        background-color: rgb(228 240 245);
+      }
+    
+      th,
+    td {
+      border: 1px solid rgb(160 160 160);
+      padding: 8px 10px;
     }
     
+    td:last-of-type {
+      text-align: center;
+    }
     
     .btn {
         padding: 10px 20px;
@@ -485,7 +532,6 @@ nav li:fist-child{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 50px;
     }
     
     .card-contentIndex {
@@ -711,8 +757,5 @@ nav li:fist-child{
     
         .mobile{
             display: none;
-        }
-        .imagem{
-            display: contents;
         }
 }

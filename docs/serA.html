@@ -22,34 +22,32 @@
 </head>
 
 <body>
-   <!-- Menu lateral para mobile-->
-   <nav class="menu_late">
-    <ul class="mobile">
-        <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
-        viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
-        <path
-        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-        </svg></a></li>
-        <li><a class="nav_li" href="index.html">Início</a></li>
-        <li><a class="nav_li" href="serA.html">Série A</a></li>
-        <li><a class="nav_li" href="serB.html">Série B</a></li>
-        <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
-        <li><a class="nav_li" href="login.html">Login</a></li>
-        <li><a class="nav_li" href="cadastro.html">Cadastro</a></li>
+    <!-- Menu lateral para mobile-->
+    <nav class="menu_late">
+        <ul class="mobile">
+            <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+            <li><a class="nav_li" href="index.html">Início</a></li>
+            <li><a class="nav_li" href="serA.html">Série A</a></li>
+            <li><a class="nav_li" href="serB.html">Série B</a></li>
+            <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
+            <li><a class="nav_li" href="notificacao.html">Central de Notificações</a></li>
 
-    </ul>
-</nav>
+        </ul>
+    </nav>
 
 <!-- Menu normal para desktop-->
-<nav class="nav desktop">
-    <a href="index.html">Início</a>
-    <a href="serA.html">Série A</a>
-    <a href="serB.html">Série B</a>
-    <a href="copa.html">Copa do Brasil</a>
-    <a href="login.html">Login</a>
-    <a href="cadastro.html">Cadastro</a>
+    <nav class="nav desktop">
+        <a href="index.html">Início</a>
+        <a href="serA.html">Série A</a>
+        <a href="serB.html">Série B</a>
+        <a href="copa.html">Copa do Brasil</a>
+        <a href="notificacao.html">Central de Notificações</a>
 
-</nav>
+    </nav>
 
 <!-- trequinho para abrir o menu lateral mobile -->
     <div class="botao_menu  ">
@@ -68,15 +66,277 @@
                 <h2>Sobre a Série A</h2>
                 <p>A Série A do Campeonato Brasileiro é a divisão de elite do futebol nacional, composta por 20 times que disputam o título em formato de pontos corridos. Os clubes jogam em turno e returno, somando pontos ao longo do ano. Além do prestígio, os primeiros colocados garantem vaga em competições internacionais, como a Copa Libertadores. A Série A é conhecida por seu alto nível técnico e pela presença de grandes clubes tradicionais do Brasil.</p>
             </div>
-            <div class="imagem">
-                <img src="imagens/Background serie A.jpg" width="900px" height="500px">
+            <div class="card-image">
+                <!-- Placeholder para a imagem do card -->
             </div>
-            <div class="mobile">
-                <img src="imagens/Background serie A.jpg" width="450px" height="300px">
-            </div>
-
         </div>
 
+        <table>
+            <caption> Classificação dos Times </caption>
+            <thead>
+              <tr>
+                <th scope="col">Times</th>
+                <th scope="col">P</th>
+                <th scope="col">J</th>
+                <th scope="col">V</th>
+                <th scope="col">E</th>
+                <th scope="col">D</th>
+                <th scope="col">GP</th>
+                <th scope="col">GC</th>
+                <th scope="col">SG</th>
+                <th scope="col">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Botafogo</th>
+                <td>73</td>
+                <td>36</td>
+                <td>21</td>
+                <td>10</td>
+                <td>5</td>
+                <td>56</td>
+                <td>28</td>
+                <td>28</td>
+                <td>67</td>
+              </tr>
+              <tr>
+                <th scope="row">Palmeiras</th>
+                <td>70</td>
+                <td>36</td>
+                <td>21</td>
+                <td>7</td>
+                <td>8</td>
+                <td>58</td>
+                <td>31</td>
+                <td>27</td>
+                <td>64</td>
+              </tr>
+              <tr>
+                <th scope="row">Internacional</th>
+                <td>65</td>
+                <td>35</td>
+                <td>18</td>
+                <td>11</td>
+                <td>6</td>
+                <td>51</td>
+                <td>29</td>
+                <td>22</td>
+                <td>61</td>
+              </tr>
+              <tr>
+                <th scope="row">Fortaleza</th>
+                <td>65</td>
+                <td>35</td>
+                <td>18</td>
+                <td>11</td>
+                <td>6</td>
+                <td>49</td>
+                <td>34</td>
+                <td>15</td>
+                <td>61</td>
+              </tr>
+              <tr>
+                <th scope="row">Flamengo</th>
+                <td>63</td>
+                <td>35</td>
+                <td>18</td>
+                <td>9</td>
+                <td>8</td>
+                <td>53</td>
+                <td>38</td>
+                <td>15</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <th scope="row">São Paulo</th>
+                <td>59</td>
+                <td>35</td>
+                <td>17</td>
+                <td>8</td>
+                <td>10</td>
+                <td>50</td>
+                <td>37</td>
+                <td>13</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <th scope="row">Cruzeiro</th>
+                <td>48</td>
+                <td>35</td>
+                <td>13</td>
+                <td>9</td>
+                <td>13</td>
+                <td>40</td>
+                <td>38</td>
+                <td>2</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <th scope="row">Bahia</th>
+                <td>47</td>
+                <td>35</td>
+                <td>13</td>
+                <td>8</td>
+                <td>14</td>
+                <td>45</td>
+                <td>45</td>
+                <td>0</td>
+                <td>44</td>
+              </tr>
+              <tr>
+                <th scope="row">Corinthians</th>
+                <td>47</td>
+                <td>35</td>
+                <td>12</td>
+                <td>11</td>
+                <td>12</td>
+                <td>44</td>
+                <td>43</td>
+                <td>1</td>
+                <td>44</td>
+              </tr>
+              <tr>
+                <th scope="row">Atlético-MG</th>
+                <td>44</td>
+                <td>36</td>
+                <td>10</td>
+                <td>14</td>
+                <td>12</td>
+                <td>46</td>
+                <td>52</td>
+                <td>-6</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th scope="row">Vasco</th>
+                <td>43</td>
+                <td>35</td>
+                <td>12</td>
+                <td>7</td>
+                <td>16</td>
+                <td>37</td>
+                <td>53</td>
+                <td>-16</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th scope="row">Vitória</th>
+                <td>42</td>
+                <td>35</td>
+                <td>12</td>
+                <td>6</td>
+                <td>17</td>
+                <td>40</td>
+                <td>49</td>
+                <td>-9</td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <th scope="row">Juventude</th>
+                <td>42</td>
+                <td>36</td>
+                <td>10</td>
+                <td>12</td>
+                <td>14</td>
+                <td>46</td>
+                <td>57</td>
+                <td>-11</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <th scope="row">Grêmio</th>
+                <td>41</td>
+                <td>35</td>
+                <td>11</td>
+                <td>8</td>
+                <td>16</td>
+                <td>41</td>
+                <td>45</td>
+                <td>-4</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <th scope="row">Athletico-PR</th>
+                <td>41</td>
+                <td>35</td>
+                <td>11</td>
+                <td>8</td>
+                <td>16</td>
+                <td>38</td>
+                <td>42</td>
+                <td>-4</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <th scope="row">Fluminense</th>
+                <td>39</td>
+                <td>35</td>
+                <td>10</td>
+                <td>9</td>
+                <td>16</td>
+                <td>30</td>
+                <td>38</td>
+                <td>-8</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <th scope="row">Criciúma</th>
+                <td>38</td>
+                <td>35</td>
+                <td>9</td>
+                <td>11</td>
+                <td>15</td>
+                <td>39</td>
+                <td>49</td>
+                <td>-10</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <th scope="row">Bragantino</th>
+                <td>37</td>
+                <td>35</td>
+                <td>8</td>
+                <td>13</td>
+                <td>14</td>
+                <td>36</td>
+                <td>45</td>
+                <td>-9</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <th scope="row">Cuiabá</th>
+                <td>30</td>
+                <td>35</td>
+                <td>6</td>
+                <td>12</td>
+                <td>17</td>
+                <td>27</td>
+                <td>44</td>
+                <td>-17</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <th scope="row">Atlético-GO</th>
+                <td>26</td>
+                <td>35</td>
+                <td>6</td>
+                <td>8</td>
+                <td>21</td>
+                <td>24</td>
+                <td>53</td>
+                <td>-29</td>
+                <td>24</td>
+              </tr>
+
+  </tbody>
+</table>
+
+        <div class="btn-group">
+            <a href="#">Classificação Atual</a>
+            <a href="#">Últimos Jogos</a>
+            <a href="#">Times Participantes</a>
+        </div>
     </main>
 
 </body>

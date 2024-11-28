@@ -22,34 +22,32 @@
 </head>
 
 <body>
-  <!-- Menu lateral para mobile-->
-  <nav class="menu_late">
-    <ul class="mobile">
-        <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
-        viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
-        <path
-        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-        </svg></a></li>
-        <li><a class="nav_li" href="index.html">Início</a></li>
-        <li><a class="nav_li" href="serA.html">Série A</a></li>
-        <li><a class="nav_li" href="serB.html">Série B</a></li>
-        <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
-        <li><a class="nav_li" href="login.html">Login</a></li>
-        <li><a class="nav_li" href="cadastro.html">Cadastro</a></li>
+    <!-- Menu lateral para mobile-->
+    <nav class="menu_late">
+        <ul class="mobile">
+            <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+            <li><a class="nav_li" href="index.html">Início</a></li>
+            <li><a class="nav_li" href="serA.html">Série A</a></li>
+            <li><a class="nav_li" href="serB.html">Série B</a></li>
+            <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
+            <li><a class="nav_li" href="notificacao.html">Central de Notificações</a></li>
 
-    </ul>
-</nav>
+        </ul>
+    </nav>
 
 <!-- Menu normal para desktop-->
-<nav class="nav desktop">
-    <a href="index.html">Início</a>
-    <a href="serA.html">Série A</a>
-    <a href="serB.html">Série B</a>
-    <a href="copa.html">Copa do Brasil</a>
-    <a href="login.html">Login</a>
-    <a href="cadastro.html">Cadastro</a>
+    <nav class="nav desktop">
+        <a href="index.html">Início</a>
+        <a href="serA.html">Série A</a>
+        <a href="serB.html">Série B</a>
+        <a href="copa.html">Copa do Brasil</a>
+        <a href="notificacao.html">Central de Notificações</a>
 
-</nav>
+    </nav>
 
 <!-- trequinho para abrir o menu lateral mobile -->
     <div class="botao_menu  ">
@@ -67,12 +65,277 @@
                 <h2>Sobre a Série B</h2>
                 <p>A Série B do Campeonato Brasileiro é a segunda divisão do futebol nacional, composta por 20 clubes que disputam vagas na elite, a Série A. A competição segue o formato de pontos corridos, com os quatro primeiros colocados sendo promovidos. Além de proporcionar confrontos competitivos, a Série B é marcada pela luta constante de equipes tradicionais e emergentes, buscando retorno ou ascensão à primeira divisão. A batalha intensa torna o campeonato imprevisível e emocionante.</p>
             </div>
-            <div class="imagem">
-                <img src="imagens/Background Serie B.jpg" width="900px" height="500px">
+            <div class="card-image">
+                <!-- Placeholder para a imagem do card -->
             </div>
-            <div class="mobile">
-                <img src="imagens/Background Serie B.jpg" width="450px" height="300px">
-            </div>
+        </div>
+
+        <table>
+            <caption> Classificação dos Times </caption>
+            <thead>
+              <tr>
+                <th scope="col">Times</th>
+                <th scope="col">P</th>
+                <th scope="col">J</th>
+                <th scope="col">V</th>
+                <th scope="col">E</th>
+                <th scope="col">D</th>
+                <th scope="col">GP</th>
+                <th scope="col">GC</th>
+                <th scope="col">SG</th>
+                <th scope="col">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Santos</th>
+                <td>68</td>
+                <td>38</td>
+                <td>20</td>
+                <td>8</td>
+                <td>10</td>
+                <td>57</td>
+                <td>32</td>
+                <td>25</td>
+                <td>59</td>
+              </tr>
+              <tr>
+                <th scope="row">Mirassol</th>
+                <td>67</td>
+                <td>38</td>
+                <td>19</td>
+                <td>10</td>
+                <td>9</td>
+                <td>42</td>
+                <td>26</td>
+                <td>16</td>
+                <td>58</td>
+              </tr>
+              <tr>
+                <th scope="row">Sport</th>
+                <td>66</td>
+                <td>38</td>
+                <td>19</td>
+                <td>9</td>
+                <td>10</td>
+                <td>57</td>
+                <td>37</td>
+                <td>20</td>
+                <td>57</td>
+              </tr>
+              <tr>
+                <th scope="row">Ceará</th>
+                <td>64</td>
+                <td>38</td>
+                <td>19</td>
+                <td>7</td>
+                <td>12</td>
+                <td>59</td>
+                <td>41</td>
+                <td>18</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <th scope="row">Novorizontino</th>
+                <td>64</td>
+                <td>38</td>
+                <td>18</td>
+                <td>10</td>
+                <td>10</td>
+                <td>43</td>
+                <td>31</td>
+                <td>12</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <th scope="row">Goiás</th>
+                <td>63</td>
+                <td>38</td>
+                <td>18</td>
+                <td>9</td>
+                <td>11</td>
+                <td>56</td>
+                <td>32</td>
+                <td>24</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <th scope="row">Operário-PR</th>
+                <td>58</td>
+                <td>38</td>
+                <td>16</td>
+                <td>10</td>
+                <td>12</td>
+                <td>34</td>
+                <td>32</td>
+                <td>2</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <th scope="row">América-MG</th>
+                <td>58</td>
+                <td>38</td>
+                <td>15</td>
+                <td>13</td>
+                <td>10</td>
+                <td>50</td>
+                <td>35</td>
+                <td>15</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <th scope="row">Vila Nova</th>
+                <td>55</td>
+                <td>38</td>
+                <td>16</td>
+                <td>7</td>
+                <td>15</td>
+                <td>42</td>
+                <td>54</td>
+                <td>-12</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <th scope="row">Avaí</th>
+                <td>53</td>
+                <td>38</td>
+                <td>14</td>
+                <td>11</td>
+                <td>13</td>
+                <td>34</td>
+                <td>32</td>
+                <td>2</td>
+                <td>46</td>
+              </tr>
+              <tr>
+                <th scope="row">Amazonas</th>
+                <td>52</td>
+                <td>38</td>
+                <td>14</td>
+                <td>10</td>
+                <td>14</td>
+                <td>31</td>
+                <td>37</td>
+                <td>-6</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <th scope="row">Coritiba</th>
+                <td>50</td>
+                <td>38</td>
+                <td>14</td>
+                <td>8</td>
+                <td>16</td>
+                <td>41</td>
+                <td>43</td>
+                <td>-3</td>
+                <td>43</td>
+              </tr>
+              <tr>
+                <th scope="row">Paysandu</th>
+                <td>50</td>
+                <td>38</td>
+                <td>12</td>
+                <td>14</td>
+                <td>12</td>
+                <td>41</td>
+                <td>43</td>
+                <td>-2</td>
+                <td>43</td>
+              </tr>
+              <tr>
+                <th scope="row">Botafogo-SP</th>
+                <td>45</td>
+                <td>38</td>
+                <td>11</td>
+                <td>12</td>
+                <td>15</td>
+                <td>36</td>
+                <td>51</td>
+                <td>-15</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <th scope="row">Chapecoense</th>
+                <td>44</td>
+                <td>38</td>
+                <td>11</td>
+                <td>11</td>
+                <td>16</td>
+                <td>34</td>
+                <td>45</td>
+                <td>-11</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <th scope="row">CRB</th>
+                <td>43</td>
+                <td>38</td>
+                <td>11</td>
+                <td>10</td>
+                <td>17</td>
+                <td>38</td>
+                <td>45</td>
+                <td>-7</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <th scope="row">Ponte Preta</th>
+                <td>38</td>
+                <td>38</td>
+                <td>10</td>
+                <td>8</td>
+                <td>20</td>
+                <td>37</td>
+                <td>55</td>
+                <td>-18</td>
+                <td>33</td>
+              </tr>
+              <tr>
+                <th scope="row">Ituano</th>
+                <td>37</td>
+                <td>38</td>
+                <td>11</td>
+                <td>4</td>
+                <td>23</td>
+                <td>43</td>
+                <td>63</td>
+                <td>-20</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <th scope="row">Brusque</th>
+                <td>36</td>
+                <td>38</td>
+                <td>8</td>
+                <td>12</td>
+                <td>18</td>
+                <td>24</td>
+                <td>44</td>
+                <td>-20</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <th scope="row">Guarani</th>
+                <td>33</td>
+                <td>38</td>
+                <td>8</td>
+                <td>9</td>
+                <td>21</td>
+                <td>33</td>
+                <td>53</td>
+                <td>-20</td>
+                <td>28</td>
+              </tr>
+
+  </tbody>
+</table>
+
+
+        <div class="btn-group">
+            <a href="#">Classificação Atual</a>
+            <a href="#">Últimos Jogos</a>
+            <a href="#">Times Participantes</a>
         </div>
     </main>
 
