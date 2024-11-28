@@ -1,4 +1,6 @@
 <?php
+session_start(); 
+
 $conn = new mysqli('localhost', 'root', '', 'cadastro');
 $mensagem = "Email ou senha incorretos!";
 
@@ -19,6 +21,7 @@ if (isset($_POST['sub'])) {
 
         
         $clube = $f['clube'];
+        $_SESSION['id'] = $f['id'];
 
         
         if ($clube === 'Atlético Mineiro') {
@@ -57,36 +60,14 @@ if (isset($_POST['sub'])) {
             header('Location: santos.html');
         } elseif ($clube === 'São Paulo') {
             header('Location: sao_paulo.html');
-        } else ($clube === 'Vasco da Gama') {
+        } elseif ($clube === 'Vasco da Gama') {
             header('Location: vasco_da_gama.html');
+        } else {
+            header('Location: outro.html');
         }
+        exit; 
+    } else {
+        echo "<script>alert('$mensagem');</script>";
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <div class="form-container">
-        <h2>Login</h2><hr>
-        <form action="" method="POST">
-            <div class="div">
-                <label for="email">Email</label>
-                <input type="email" placeholder="Email" name="user">
-            </div>
-            <div class="div">   
-                <label for="senha">Senha</label>
-                <input type="password" placeholder="Senha" name="pass">
-            </div>
-            <div class="div">
-                <button type="submite" name="sub">Entrar</button>
-            </div>
-        </form>
-    </div>
-</body>
-</html>
