@@ -4,15 +4,15 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e1f5d1;
+    background-image: url(imagens/grama-textura.jpg);
 }
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
+    border: 1px solid rgb(140 140 140);
     font-family: sans-serif;
     font-size: 0.8rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
   
   caption {
@@ -29,7 +29,7 @@ table {
   th,
 td {
   border: 1px solid rgb(160 160 160);
-  padding: 8px 10px;
+  padding: 4px 5px;
 }
 
 td:last-of-type {
@@ -79,7 +79,14 @@ td:last-of-type {
     font-size: 16px;
     font-weight: bold;
     margin: 20px 0;
-    color: #2e7d32;
+    color: #ffffff;
+}
+.section-title1 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #1b5e20;
 }
 .section {
     padding: 10px 25px;
@@ -139,6 +146,15 @@ margin-bottom: 10px;
 .cenarios .images {
     display: flex;
     justify-content: space-around;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .form-container {
@@ -275,6 +291,7 @@ margin-bottom: 10px;
     max-width: 450px;
     margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    justify-items: center;
 }
 .card-image {
     width: 100%;
@@ -399,7 +416,7 @@ nav li:fist-child{
     position: fixed;
     top: 0;
     right: 10;
-    height: 520px;
+    height: 570px;
     width: 250px ;
     background-color: #4a8c4abd;
     backdrop-filter: blur(10px);
@@ -420,24 +437,35 @@ nav li:fist-child{
     .menu_late a{
         width: 100%;
     }
-
-/*CSS para o mobile fist*/
+    .mobileCard{
+        display: block;
+    }
+    .desktopCard{
+        display: none;
+    }
+/*CSS para o desktop*/
 @media only screen and (min-width: 768px) { 
 
     body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #e1f5d1;
+        background-image: url(imagens/grama-textura.jpg);
     }
     
-    
+    .desktopCard{
+        display: block;
+    }
+    .mobileCard{
+        display: none;
+    }
     table {
         border-collapse: collapse;
         border: 2px solid rgb(140 140 140);
         font-family: sans-serif;
         font-size: 0.8rem;
         letter-spacing: 1px;
+        background-color: white;
       }
       
       caption {
@@ -453,6 +481,7 @@ nav li:fist-child{
     
       th,
     td {
+        background-color: white;
       border: 1px solid rgb(160 160 160);
       padding: 8px 10px;
     }
@@ -504,7 +533,14 @@ nav li:fist-child{
         font-size: 32px;
         font-weight: bold;
         margin: 40px 0;
-        color: #2e7d32;
+        color: #ffffff;
+    }
+    .section-title1 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 20px 0;
+        color: #1b5e20;
     }
     .section {
         padding: 20px 50px;

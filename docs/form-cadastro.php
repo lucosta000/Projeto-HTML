@@ -1,8 +1,8 @@
+
 <?php
     $clubes = [
         "Atlético Mineiro",
         "Botafogo",
-        "Corinthians",
         "Cruzeiro",
         "Flamengo",
         "Fortaleza",
@@ -21,8 +21,45 @@
     <meta charset="UTF-8">
     <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+     <!-- Menu lateral para mobile-->
+     <nav class="menu_late">
+        <ul class="mobile">
+            <li onclick=fechar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+                viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+            <li><a class="nav_li" href="index.html">Início</a></li>
+            <li><a class="nav_li" href="serA.html">Série A</a></li>
+            <li><a class="nav_li" href="serB.html">Série B</a></li>
+            <li><a class="nav_li" href="copa.html">Copa do Brasil</a></li>
+            <li><a class="nav_li" href="login.php">Login</a></li>
+            <li><a class="nav_li" href="cadastro.php">Cadastro</a></li>
+
+        </ul>
+    </nav>
+
+<!-- Menu normal para desktop-->
+    <nav class="nav desktop">
+        <a href="index.html">Início</a>
+        <a href="serA.html">Série A</a>
+        <a href="serB.html">Série B</a>
+        <a href="copa.html">Copa do Brasil</a>
+        <a href="login.php">Login</a>
+        <a href="cadastro.php">Cadastro</a>
+
+    </nav>
+
+<!-- trequinho para abrir o menu lateral mobile -->
+    <div class="botao_menu  ">
+        <p class="mobile" onclick=mostrar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px"
+            viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>MENU</p>
+    </div>
+
     <div class="form-container">
         <h2>Cadastro</h2><hr>
         <form method="post" action="cadastro.php">
@@ -46,6 +83,15 @@
     </div>
 
     <script>
+            function mostrar() {
+            const menu_late = document.querySelector('.menu_late')
+            menu_late.style.display = 'flex'
+        }
+
+        function fechar() {
+            const menu_late = document.querySelector('.menu_late')
+            menu_late.style.display = 'none'
+        }
         document.getElementById('formCadastro').addEventListener('submit', function(e) {
             e.preventDefault();
 
