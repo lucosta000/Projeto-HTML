@@ -1,4 +1,5 @@
 @charset "UTF-8";
+$fundo: "imagens/background\ geral.jpg";
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -6,8 +7,6 @@ body {
     padding: 0;
     background-color: #e1f5d1;
 }
-
-
 
 
 .btn {
@@ -64,12 +63,16 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 25px;
+    background-image: url(imagens/background\ geral.jpg);
+
+    
 }
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 25px;
+    background-image: url(imagens/background\ geral.jpg);
 }
 .cardIndex {
     background-color: white;
@@ -281,6 +284,9 @@ margin-bottom: 10px;
 .desktop{
     display: none;
 }
+.imagem{
+    display: none;
+}
 
 .mobile{
     display: contents;
@@ -304,10 +310,7 @@ nav {
    
    background-color: white;
    box-shadow: 3px 3px 5px rgba(0, 0, 0,0.1);
-   
-   
-   
-   
+   align-content: top;
    
    /* background-color: #4a6a41;
     color: white;
@@ -329,13 +332,6 @@ nav a {
     display: flex;
     align-items: center;
     font-size: 20px;
-
-
-
-
-
-
-
 
     /*color: white;
     text-decoration: none;
@@ -373,7 +369,7 @@ nav li:fist-child{
     position: fixed;
     top: 0;
     right: 10;
-    height: 520px;
+    height: 650px;
     width: 250px ;
     background-color: #4a8c4abd;
     backdrop-filter: blur(10px);
@@ -405,7 +401,12 @@ nav li:fist-child{
         background-color: #e1f5d1;
     }
     
-    
+    h1{
+        color: white;
+        font-size: 50px;
+        
+
+    }
     
     
     .btn {
@@ -480,6 +481,7 @@ nav li:fist-child{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 50px;
     }
     
     .card-contentIndex {
@@ -705,5 +707,8 @@ nav li:fist-child{
     
         .mobile{
             display: none;
+        }
+        .imagem{
+            display: contents;
         }
 }
