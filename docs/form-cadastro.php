@@ -34,8 +34,10 @@
     <div class="form-container">
         <h2>Cadastro</h2><hr>
         <form method="post" action="cadastro.php">
-            <label>Nome <input type="text" name="nome" required></label><br>
-            <label>Email <input type="email" name="email" required></label><br>
+            <div class="input-group">
+                <label>Nome <input type="text" name="nome" required></label><br>
+                <label>Email <input type="email" name="email" required></label><br>
+            </div>
             <label>Senha <input type="password" name="senha" required></label><br>
             <label>Telefone <input type="text" name="telefone" required></label><br>
             <label>Clube</label>
