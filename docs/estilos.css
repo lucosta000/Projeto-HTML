@@ -373,7 +373,7 @@ nav li:fist-child{
     position: fixed;
     top: 0;
     right: 10;
-    height: 650px;
+    height: 580px;
     width: 250px ;
     background-color: #4a8c4abd;
     backdrop-filter: blur(10px);
